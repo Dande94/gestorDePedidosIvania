@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="Author" content="Anderson Nunes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/itens.js"></script>
+    <link rel="shortcut icon" href="assets/img/mousse_icon.svg" type="image/x-icon">
+    <title>Mousse's</title>
+</head>
+<header>
+    <div>
+        <h1>Mousse's</h1>
+        <h2>Saboreie sem arrependimentos!</h2>
+    </div>
+</header>
+<body>
+    <main>
+        <section class="produtos sobremesa">
+            <h3>Escolha seu Mousse</h3>
+        </section>
+        <div class="metodo-pagamento">
+            <label for="metodoPagamento">Método de Pagamento:</label>
+            <select id="metodoPagamento">
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">Pix</option>
+            </select>
+            <!-- Div que mostra o valor total -->
+            <div id="total-compra">
+                Total: R$0,00
+            </div>
+        </div>
+        <section id="opcao-pedido">
+            <div class="coleta">
+                <input type="radio" class="custom-radio" name="tipoPedido" id="retirada" value="retirada">
+                <label for="retirada">Retirar com o vendedor</label>
+                <input type="radio" class="custom-radio" name="tipoPedido" id="delivery" value="delivery">
+                <label for="delivery">Delivery</label>
+                
+            </div>
+            <!-- Formulário de Delivery (inicialmente oculto) -->
+            <div id="form-delivery" style="display: none;">
+                <h3>Detalhes de Delivery</h3>
+                <form id="form-delivery-details">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="endereco">Local:</label>
+                    <input type="text" id="local" name="local" required>
+        
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes"></textarea>
+                </form>
+            </div>
+        </section>
+        <section class="produtos btn-finalizar">
+            <button id="btn-finalizar">Finalizar Pedido</button>
+        </section>
+    </main>
+    <a href="https://lipsam.com.br/" class="pulse-button">
+        <img src="assets/img/LogoVetorizadaFinal.svg" alt="Pulse Button Icon">
+    </a>
+</body>
+</html>
